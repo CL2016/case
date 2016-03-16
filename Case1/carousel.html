@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>    
+*{ margin:0; padding:0; list-style:none;}    
+#box{ width:840px; border:1px solid #000; height:210px; margin:30px auto; position:relative; overflow:hidden;}    
+#box ul{ position:absolute; left:0; top:0;}    
+#box ul li{ width:200px; height:200px; float:left; padding:5px;}    
+</style>    
+<script>    
+window.onload=function(){    
+	var oBox=document.getElementById('box');    
+	var oUl=oBox.children[0];    
+	var aLi=oUl.children;    
+	//复制一份内容    
+	oUl.innerHTML+=oUl.innerHTML;    
+	oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
+	setInterval(function(){    
+		var l=oUl.offsetLeft+10;    
+		if(l>=0){    
+			l=-oUl.offsetWidth/2;    
+		}    
+		oUl.style.left=l+'px';    
+	},500);    
+};    
+</script>    
+</head>    
+<body>    
+<div id="box">    
+	<ul>    
+   	   <li><img src="images/tjj.jpg" width="200"></li>    
+       <li><img src="images/sjj.jpg" width="200"></li>    
+       <li><img src="images/scj.jpg" width="200"></li>    
+       <li><img src="images/ccj.jpg" width="200"></li>    
+           
+   </ul>    
+</div>    
+</body>
+
+</html>

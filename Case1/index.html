@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <style>
+   #top{width:100%;height:176px;}
+   div{display: block;}
+   body{width:1500px;height:1230px;margin:0 auto;margin:0;padding:0;
+   background:url(images/beijin.jpg) repeat-y;font-family:"Microsoft Yahei";}
+   #head{width:1010px;height:142px;margin:0 auto;}
+   #logo {width:600px;height:100px;float:left;}
+   #logo img{margin-left:40px;}
+   #header{width:280px;height:32px;font-size:14px;
+    float:right;color:#333;margin-top:10px;}
+   a{border:none;text-decoration:none;}
+   #header a{font-size:14px;font-family:"微软雅黑";color:#589f1d;}
+
+   .ser{width:143px;height:21px;float:left;}
+   form{display:block;margin-top:0em;}
+   .kuan input{width:111px;height:21px;
+    background: url(images/kuang.jpg) no-repeat;
+    border: none;float: left;}
+   .sou input{width:22px;height:21px;
+    background: url(images/sou.jpg) no-repeat;
+    border: none;float: left;}
+   
+   .tel{width:315px;height:52px;float:right;margin-top:10px;}
+   .clear{clear:both;}
+
+   
+   #nav{height:30px;line-height:25px;margin: 0px;padding: 0px;margin-left:30px;
+   border: 1px solid white;font-size:16px;font-weight:bold;margin-top:-50px;}
+   #nav li a, #nav li{float: left;}
+   #nav li{list-style: none;position: relative; width:102px;}
+   #nav li a{text-align:center;text-decoration: none;color: white;
+   height:25px; width:108px; border-right:1px solid #ffffff;}
+   #nav li #lx{border-right:0px;}
+   #nav li a:hover{background:#b9aa6f;}
+   #tiao{float:left;margin-top:-30px;}
+   #tiao2{float:right;margin-top:-30px;}
+   
+ #fade_focus{width:1500px;height:398px;margin-top:0px;}
+.loading{float:left;width:1500px;border:#666666 0px solid;background-color:#000000;
+color:red;text-align:center;
+font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;}
+#dh{display:none;}
+.d1{width:1500px;height:398px;overflow:hidden;border:#666666 0px solid;
+background-color:#000000;position:relative;}
+.d2{width:1500px;height:398px;overflow:hidden;}
+
+.num_list{left:0px;background-color:#000000;
+font-size:12px;padding:4px 0px;height:5px;overflow:hidden;}
+
+.num_list span{display:inline-block;height:5px;padding-left:6px;}
+
+.button{position:absolute; z-index:1000; right:0px; bottom:2px; 
+font-size:13px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+
+.b1,.b2{background-color:#666666;display:block;
+float:left;padding:10px 15px;margin-right:20px;
+color:#FFFFFF;text-decoration:none;cursor:pointer;}
+.b2{color:#FFCC33;background-color:#FF6633;}
+
+#main{width:1010px;height:570px;margin:0 auto;}
+#main1{width:1010px;height:310px;margin-top:10px;}
+#news{width:380px;height:310px;float:left;}
+#tou{float:left;width:380px;height:35px;margin-left:25px;
+background:url(images/tu3.jpg) no-repeat left bottom;}
+#tou h4{margin-top:2px;margin-bottom:0px;margin-left:10px;}
+#tou p{margin-top:-3px;margin-bottom:0px;margin-left:10px;
+    font-size:12px;color:#94cb00;}
+#tou span{float:right;}
+#tou img{margin-top:23px;}
+
+#nr{width:380px;height:230px;border-right:1px solid #dec9d8;border-left:1px solid #dec9d8;border-top:1px solid #dec9d8;border-bottom:1px solid #dec9d8;overflow:hidden;
+margin-left:25px;float:left;margin-top:15px;}
+
+#ry{width:130px;height:80px;margin-left:10px;margin-top:10px;float:left;}
+
+#js{width:223px;height:80px;float:right;margin-top:10px;font-size:12px;
+margin-right:10px;}
+#js span{width:230px;color:#4b8619;font-weight:bold;}
+#js p{font-size:13px;color:#666;margin-top:10px;text-indent:15px;}
+#js a{color:#4b8619;font-size:12px;}
+
+#news3{width:380px;height:110px;float:left;margin-top:10px;margin-left:10px;}
+#news3 li{width:350px;height:24px;list-style-image:url(images/jt.jpg);float:left;}
+#news3 a{font-size:14px;color:#333;}
+a#demo:hover{background:#FFC080;color:#000000;font-weight:bold;}
+a#demo:active{background:#CCCFFF;color:#000000;font-weight:bold;}
+a#demo:visited{background:#FF3300;color:#000000;font-weight:bold;}
+
+#gywm{width:420px;height:260px;float:left;}
+#tou1{float:left;width:420px;height:35px;margin-left:35px;
+background:url(images/tu3.jpg) no-repeat left bottom;}
+#tou1 h4{margin-top:2px;margin-bottom:0px;margin-left:10px;}
+#tou1 p{margin-top:-3px;margin-bottom:0px;margin-left:10px;
+    font-size:12px;color:#94cb00;}
+#tou1 span{float:right;}
+#tou1 img{margin-top:23px;}
+
+#nr1{width:420px;margin-top:5px;height:230px;border-right:1px solid #dec9d8;border-left:1px solid #dec9d8;border-top:1px solid #dec9d8;
+border-bottom:1px solid #dec9d8;overflow:hidden;
+margin-left:35px;float:left;margin-top:15px;}
+#js1{width:410px;height:230px;margin: 0 auto;font-family:"Microsoft Yahei";
+overflow:hidden;font-size:13px;text-indent:15px;color:#5a5a5a;font-weight:bold;
+letter-spacing:1px;line-height:23px;margin-top:10px;}
+#js1 img{float:left;}
+
+#fw{width:161px;height:269px;float:right;margin-top:30px;}
+#fw img{margin-top:20px;float:left;width:140px;}
+
+#cpzs{width:1010px;height:225px;float:left;}
+#tou2{float:left;width:1010px;height:35px;margin-left:25px;
+background:url(images/tu3.jpg) no-repeat left bottom;}
+#tou2 h4{margin-top:2px;margin-bottom:0px;margin-left:10px;}
+#tou2 p{margin-top:-3px;margin-bottom:0px;margin-left:10px;
+    font-size:12px;color:#94cb00;}
+#tou2 span{float:right;}
+#tou2 img{margin-top:23px;margin-right:45px;}
+
+
+#box{width:960px;height:186px;float:left;border:1px solid #dec9d8;
+overflow:hidden;margin-left:25px;margin-top:15px;position:relative;}    
+#box ul li{list-style:none;margin-left:-45px;margin-top:-20px;}  
+#box a{width:200px;height:135px;float:left;padding:20px;color:#94cb00;text-align:center;}
+
+#foot{width:978px;height:105px;background:#589f1d;text-align:center;color:#FFF;margin:0 auto;padding:10px;font-family:"微软雅黑";}
+#foot p{color:#FFF;padding-top:15px;padding-bottom:15px;
+ font-size:16px;margin:0;}
+#foot a{color:#FFF;font-family:"微软雅黑";}
+#foot a:hover{color:#000000;font-weight:bold;}
+#tiao3{float:left;margin-top:-100px;}
+#tiao4{float:right;margin-top:-100px;}
+  </style>
+ </head>
+ <body>
+  <div id="top">
+    <div id="head">
+      <div id="logo">
+       <a href=""><img src="images/logo.jpg"></a>
+	  </div>
+	  <div id="header">
+       <span style="float:left;">  
+	   <a href="">中文版</a> | <a href="">English</a>
+	   </span>
+	   <form action="" method="get" class="ser">
+          <div class="kuan">
+		  <input name="name" type="text">
+          <input name="names" type="hidden" id="base" value="4">
+          </div>
+          <div class="sou">
+		  <input value="" type="submit">
+		  </div>
+		  
+       </form>
+	   <div class="tel"><img src="images/tel.jpg"></div>
+	   <div class="clear"></div>
+	  </div>
+	  <div id="kuan1">
+	   <img src="images/kuan1.jpg">
+       <ul id="nav">
+        <li><a href="">网站首页</a></li>
+		
+        <li><a href="">关于我们</a></li>  
+        <li><a href="">新闻中心</a></li> 
+        <li><a href="">产品展示</a></li>       
+        <li><a href="">服务支持</a></li>
+        <li><a href="">销售网络</a></li>
+        <li><a href="">人才招聘</a></li>
+        <li><a href="">在线留言</a></li>
+	    <li><a href="" id="lx">联系我们</a></li>
+       </ul>
+	   </div> 
+	</div>
+	 <div id="tiao">
+        <img src="images/kuan.jpg">
+	 </div>
+	 <div id="tiao2">
+        <img src="images/kuan.jpg">
+	 </div>
+
+	<div id="fade_focus">
+      <div class="loading"><br />
+	  <img src="images/tu1.jpg">
+	  </div>
+      <ul id="dh">
+      <li><a href="" target="_blank"><img src="images/tu1.jpg" width="1500" height="398"/></a></li>
+      <li><a href="" target="_blank"><img src="images/tu2.jpg" width="1500" height="398"/></a></li>
+	</div>
+
+	<div id="main">
+      <div id="main1">
+        <div id="news">
+          <div id="tou">
+            <span style="float:left;"> <h4>公司新闻</h4>
+            <p><b>Company News</b></p></span>
+            <span><a target="_blank" href=""><img src="images/more.jpg"></a></span>
+          </div>
+
+		  <div id="nr">
+            <div id="ry"><img src="images/tu4.jpg" width="130" height="79">
+		  </div>
+		  <div id="js">
+            <span><a href="">热烈欢迎贝宁和乌兹别克斯坦客户来访</a></span>
+            <p>2014年2月27日，贝宁和乌兹别克斯坦客户来访，在集.........
+			<a href="">更多</a></p>
+          </div>
+		  
+		  <div id="news3">
+            <li>
+			<a href="" id="demo">祝贺2014CAC会展圆满落幕</a>
+		    <span style="float:right;">2014-05-27</span>
+            </li>
+            <li>
+			<a href="" id="demo">祝贺2014CAC会展圆满落幕</a>
+		    <span style="float:right;">2014-05-27</span>
+            </li>
+			<li>
+			<a href="" id="demo">祝贺2014CAC会展圆满落幕</a>
+		    <span style="float:right;">2014-05-27</span>
+            </li>
+			<li>
+			<a href="" id="demo">祝贺2014CAC会展圆满落幕</a>
+		    <span style="float:right;">2014-05-27</span>
+            </li>
+			<li>
+			<a href="" id="demo">祝贺2014CAC会展圆满落幕</a>
+		    <span style="float:right;">2014-05-27</span>
+            </li>
+          </div>
+		  </div>
+
+          </div>
+
+		 <div id="gywm">
+          <div id="tou1">
+            <span style="float:left;"><h4>公司介绍</h4>
+            <p><b>Company introduction</b></p></span>
+            <span><a target="_blank" href=""><img src="images/more.jpg"></a></span>
+		  </div>
+		  <div id="nr1">
+           <div id="js1">
+           <img src="images/tu5.jpg" width="130" height="80">
+          合肥益丰化工有限公司位于安徽省合肥市循环经济园内，占地40亩，总建筑面积25000平方米，总投资1.31亿元人民币。目前，农药制剂加工生产能力为2万吨/年，产值达2.5亿元人民币。
+          地理位置优越、交通便捷、资源丰富。公司所在的循环经济园区位于合肥东部，南邻巢湖，东望“长三角经济圈”， 拥有高速公路、专用铁路、黄金水路三者兼备的综合交通物流体系，公司产品可快速便捷到达周边的任何一个机场与港口。这里煤、盐、电资源丰富，科技力量雄厚，......     
+          </div>
+         </div>
+		 </div>
+
+		 <div id="fw">
+          <a href=""><img src="images/xs.jpg"></a>
+          <a href=""><img src="images/fw.jpg"></a>
+          <a href=""><img src="images/ry.jpg"></a>
+          <a href=""><img src="images/lx.jpg"></a> 
+          
+         </div>
+        </div>
+
+		<div id="cpzs">
+          <div id="tou2">
+            <span style="float:left;"><h4>产品展示</h4>
+            <p><b>Product display</b></p></span>
+            <span><a target="_blank" href=""><img src="images/more.jpg"></a></span>
+		  </div>
+		  <div id="al">
+            <div id="box">
+			 <ul>
+	          <li><a href=""><img src="images/tjj.jpg" width="208" height="135"></br>植物生长调节剂</a></li>    
+              <li><a href=""><img src="images/sjj.jpg" width="208" height="135"></br>杀菌剂</a></li>    
+              <li><a href=""><img src="images/scj.jpg" width="208" height="135"></br>杀虫剂</a></li>    
+              <li><a href=""><img src="images/ccj.jpg" width="208" height="135"></br>除草剂</a></li>
+			 </ul>
+            </div>    
+		  </div>
+	   </div>
+
+	</div>
+    <div id="foot">
+       
+	   <p>
+	   <a href="">关于我们  |</a>  
+	   <a href="">服务支持  |</a>   
+	   <a href="">网络销售  |</a>   
+	   <a href="">联系我们  |</a>  
+	   <a href="">网站地图  </a>
+	   </p>
+	   
+	   <b>
+       电话：+86-551-7600871 +86-551-7600871 地址：安徽省合肥市肥东区循环经济园区纬四路北侧
+	   </b>
+	</div>
+	<div id="tiao3">
+        <img src="images/tiao.jpg" width="251">
+	 </div>
+	 <div id="tiao4">
+        <img src="images/tiao.jpg" width="251">
+	 </div>
+  </div>
+
+<script>    
+window.onload=function(){    
+	var oBox=document.getElementById('box');    
+	var oUl=oBox.children[0];    
+	var aLi=oUl.children;    
+	//复制一份内容    
+	oUl.innerHTML+=oUl.innerHTML;    
+	oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
+	setInterval(function(){    
+		var l=oUl.offsetLeft+10;    
+		if(l>=0){    
+			l=-oUl.offsetWidth/2;    
+		}    
+		oUl.style.left=l+'px';    
+	},500);    
+};    
+</script> 
+
+
+
+
+<script language="javascript" type="text/javascript">
+//主函数
+var s=function(){
+var interv=2000; //切换间隔时间
+var interv2=10; //切换速速
+var opac1=80; //文字背景的透明度
+var source="fade_focus" //焦点轮换图片容器的id名称
+//获取对象
+function getTag(tag,obj){if(obj==null){return document.getElementsByTagName(tag)}else{return obj.getElementsByTagName(tag)}}
+function getid(id){return document.getElementById(id)};
+var opac=0,j=0,t=50,num,scton=0,timer,timer2,timer3;var id=getid(source);id.removeChild(getTag("div",id)[0]);var li=getTag("li",id);var div=document.createElement("div");var title=document.createElement("div");var span=document.createElement("span");var button=document.createElement("div");button.className="button";for(var i=0;i<li.length;i++){var a=document.createElement("a");a.innerHTML=i+1;a.onclick=function(){clearTimeout(timer);clearTimeout(timer2);clearTimeout(timer3);j=parseInt(this.innerHTML)-1;scton=0;t=50;opac=0;fadeon();};a.className="b1";a.onmouseover=function(){this.className="b2"};a.onmouseout=function(){this.className="b1";sc(j)};button.appendChild(a);}
+//控制图层透明度
+function alpha(obj,n){if(document.all){obj.style.filter="alpha(opacity="+n+")";}else{obj.style.opacity=(n/100);}}
+//控制焦点按钮
+function sc(n){for(var i=0;i<li.length;i++){button.childNodes[i].className="b1"};button.childNodes[n].className="b2";}
+title.className="num_list";title.appendChild(span);alpha(title,opac1);id.className="d1";div.className="d2";id.appendChild(div);id.appendChild(title);id.appendChild(button);
+//渐显
+var fadeon=function(){opac+=5;div.innerHTML=li[j].innerHTML;span.innerHTML=getTag("img",li[j])[0].alt;alpha(div,opac);if(scton==0){sc(j);num=-2;scrolltxt();scton=1};if(opac<100){timer=setTimeout(fadeon,interv2)}else{timer2=setTimeout(fadeout,interv);};}
+//渐隐
+var fadeout=function(){opac-=5;div.innerHTML=li[j].innerHTML;alpha(div,opac);if(scton==0){num=2;scrolltxt();scton=1};if(opac>0){timer=setTimeout(fadeout,interv2)}else{if(j<li.length-1){j++}else{j=0};fadeon()};}
+//滚动文字
+var scrolltxt=function(){t+=num;span.style.marginTop=t+"px";if(num<0 && t>3){timer3=setTimeout(scrolltxt,interv2)}else if(num>0 && t<50){timer3=setTimeout(scrolltxt,interv2)}else{scton=0}};
+fadeon();
+}
+//初始化
+window.onload=s;
+</script>
+
+    <script type="text/javascript">
+        $(function(){
+           $('#ch .bigImg').soChange({
+              thumbObj:'#ch .a2',
+                thumbNowClass:'on',//自定义导航对象当前class为on
+                  changeTime:4000//自定义切换时间为4000ms
+                    });
+                });
+    </script>
+ </body>
+
+
+</html>
